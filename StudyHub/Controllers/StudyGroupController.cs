@@ -8,5 +8,11 @@ namespace StudyHub.Controllers
         {
             return View();
         }
+
+        public IActionResult CreateStudyGroup()
+        {
+
+            return View();
+        }
     }
 }
