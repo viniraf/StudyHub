@@ -1,5 +1,100 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewBag.Title = "Grupos de Estudo";
 }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Grupos de Estudo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+            .card img {
+                max-width: 100%;
+                height: auto;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Grupos de Estudo</h2>
+
+        <!-- Adicionando botão "Adicionar Grupo" -->
+        <div class="d-flex justify-content-end mb-3">
+            <button type="button" class="btn btn-outline-primary">Adicionar Grupo</button>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center align-items-center">
+            <div class="col-md-3">
+                <div class="card">
+                    <h3>Grupo 1</h3>
+                    <p>Descrição do Grupo 1</p>
+                    <a href="#">Link do Grupo 1</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h3>Grupo 2</h3>
+                    <p>Descrição do Grupo 2</p>
+                    <a href="#">Link do Grupo 2</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h3>Grupo 3</h3>
+                    <p>Descrição do Grupo 3</p>
+                    <a href="#">Link do Grupo 3</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h3>Grupo 4</h3>
+                    <p>Descrição do Grupo 4</p>
+                    <a href="#">Link do Grupo 4</a>
+                </div>
+            </div>
+
+            <!-- Adicionando mais dois cards para ilustrar -->
+            <div class="col-md-3">
+                <div class="card">
+                    <h3>Grupo 5</h3>
+                    <p>Descrição do Grupo 5</p>
+                    <a href="#">Link do Grupo 5</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h3>Grupo 6</h3>
+                    <p>Descrição do Grupo 6</p>
+                    <a href="#">Link do Grupo 6</a>
+                </div>
+            </div>
+
+            <!-- Adicionando mais dois cards para ilustrar -->
+            <div class="col-md-3">
+                <div class="card">
+                    <h3>Grupo 7</h3>
+                    <p>Descrição do Grupo 7</p>
+                    <a href="#">Link do Grupo 5</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h3>Grupo 8</h3>
+                    <p>Descrição do Grupo 8</p>
+                    <a href="#">Link do Grupo 6</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
