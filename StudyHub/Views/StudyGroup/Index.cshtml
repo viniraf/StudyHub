@@ -1,4 +1,6 @@
-﻿@{
+﻿@model StudyGroupModel
+
+@{
     ViewBag.Title = "Grupos de Estudo";
 }
 
@@ -33,67 +35,16 @@
         </div>
 
         <div class="d-flex flex-wrap justify-content-center align-items-center">
-            <div class="col-md-3">
-                <div class="card">
-                    <h3>Grupo 1</h3>
-                    <p>Descrição do Grupo 1</p>
-                    <a href="#">Link do Grupo 1</a>
+            @foreach (var group in ViewBag.Groups)
+            {
+                <div class="col-md-3">
+                    <div class="card">
+                        <h3>@group.Title</h3>
+                        <p>@group.Description</p>
+                        <a href="@group.Link">Link</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <h3>Grupo 2</h3>
-                    <p>Descrição do Grupo 2</p>
-                    <a href="#">Link do Grupo 2</a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <h3>Grupo 3</h3>
-                    <p>Descrição do Grupo 3</p>
-                    <a href="#">Link do Grupo 3</a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <h3>Grupo 4</h3>
-                    <p>Descrição do Grupo 4</p>
-                    <a href="#">Link do Grupo 4</a>
-                </div>
-            </div>
-
-            <!-- Adicionando mais dois cards para ilustrar -->
-            <div class="col-md-3">
-                <div class="card">
-                    <h3>Grupo 5</h3>
-                    <p>Descrição do Grupo 5</p>
-                    <a href="#">Link do Grupo 5</a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <h3>Grupo 6</h3>
-                    <p>Descrição do Grupo 6</p>
-                    <a href="#">Link do Grupo 6</a>
-                </div>
-            </div>
-
-            <!-- Adicionando mais dois cards para ilustrar -->
-            <div class="col-md-3">
-                <div class="card">
-                    <h3>Grupo 7</h3>
-                    <p>Descrição do Grupo 7</p>
-                    <a href="#">Link do Grupo 5</a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <h3>Grupo 8</h3>
-                    <p>Descrição do Grupo 8</p>
-                    <a href="#">Link do Grupo 6</a>
-                </div>
-            </div>
-
+            }
         </div>
     </div>
 </body>

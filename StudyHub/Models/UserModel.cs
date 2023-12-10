@@ -8,12 +8,14 @@ public class UserModel
 
     public DateTime UpdateDate { get; set; }
 
-    public String Name { get; set; } = "";
+    public String Name { get; set; }
 
-    public String Profile { get; set; } = "";
+    public String Profile { get; set; }
 
-    public String Username { get; set; } = "";
+    public String Username { get; set; }
 
-    public String Password { get; set; } = "";
+    public String Password { get; set; }
 
+    // Propriedade de navegação para a associação com StudyGroupModel
+    public List<StudyGroupModel> CreatedGroups { get; set; }
 }

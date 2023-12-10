@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using StudyHub.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add configurations to Entity Framework
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<StudyHubDbContext>(options => options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
